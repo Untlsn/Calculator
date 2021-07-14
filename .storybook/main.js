@@ -1,7 +1,7 @@
-const aliases = require('./aliases')
+const aliases = require('../.storybook/aliases')
 
 module.exports = {
-  webpackFinal(config) {
+  webpackFinal: async(config) => {
     config.resolve.alias = aliases
     return config;
   },

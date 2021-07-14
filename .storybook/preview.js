@@ -1,19 +1,20 @@
-import CombineProvider from '../../../React/Portfolio/src/providers/StyleProvider';
+import React from 'react';
+import StyleProvider from '../src/providers/StyleProvider';
 
 export const parameters = {
-  actions: { argTypesRegex: "^on[A-Z].*" },
+  actions: { argTypesRegex: '^on[A-Z].*' },
   controls: {
     matchers: {
       color: /(background|color)$/i,
       date: /Date$/,
     },
   },
-}
+};
 
 export const decorators = [
   (Story) => (
-      <CombineProvider>
+      <StyleProvider>
         <Story />
-      </CombineProvider>
-  )
-]
+      </StyleProvider>
+  ),
+];

@@ -1,8 +1,12 @@
 import React from 'react';
+import * as S from './style';
+import Header from '@organisms/Header';
 
 const Home = () => {
   return (
-    <div>Hello World!</div>
+    <S.Wrapper>
+      <Header />
+    </S.Wrapper>
   );
 };
 

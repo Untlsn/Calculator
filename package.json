@@ -7,7 +7,7 @@
     "react"
   ],
   "scripts": {
-    "start": "netlify dev",
+    "start": "vite",
     "dev": "vite",
     "build": "vite build",
     "storybook": "start-storybook -p 6006",
@@ -21,10 +21,10 @@
   },
   "devDependencies": {
     "@babel/core": "^7.14.6",
-    "@storybook/addon-actions": "^6.3.2",
-    "@storybook/addon-essentials": "^6.3.2",
-    "@storybook/addon-links": "^6.3.2",
-    "@storybook/react": "^6.3.2",
+    "@storybook/addon-actions": "^6.3.4",
+    "@storybook/addon-essentials": "^6.3.4",
+    "@storybook/addon-links": "^6.3.4",
+    "@storybook/react": "^6.3.4",
     "@types/lodash": "^4.14.171",
     "@types/react": "^17.0.13",
     "@types/react-dom": "^17.0.8",

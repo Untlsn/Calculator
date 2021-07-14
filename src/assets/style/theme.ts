@@ -47,7 +47,7 @@ export const thirdTheme = {
     result: '#1e0836',
     text: '#fae433',
     switchBgc: '#1e0836',
-    switchLeader: '#1e0836',
+    switchLeader: '#03e0cf',
     buttonText: '#fce358',
     buttonDef: '#331b4d',
     buttonDefShadow: '#6e2087',
@@ -56,6 +56,6 @@ export const thirdTheme = {
     buttonRed: '#00decf',
     buttonRedShadow: '#66fcf2',
     buttonWrapper: '#1e0836',
-    wrapper: '#1e0836',
+    wrapper: '#17062a',
   },
 };

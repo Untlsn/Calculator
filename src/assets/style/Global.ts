@@ -9,6 +9,8 @@ const GlobalStyle = createGlobalStyle`
     font-family: Roboto, sans-serif;
     margin: 0;
     min-height: 100vh;
+    background-color: ${({ theme }) => theme.colors.wrapper};
+    color: ${({ theme }) => theme.colors.text};
 
     &::-webkit-scrollbar {
       width: 5px;

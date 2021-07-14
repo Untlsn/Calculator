@@ -1,14 +1,14 @@
 import React from 'react';
-import { ThemeProvider } from 'styled-components';
-import { GlobalStyle, theme } from '@style';
+import { GlobalStyle } from '@style';
 import { OnlyChildren } from '~/type';
+import { ProvideTheme } from '@hooks/useTheme';
 
 const StyleProvider = ({ children }: OnlyChildren) => {
   return (
-    <ThemeProvider theme={theme}>
+    <ProvideTheme>
       <GlobalStyle />
       {children}
-    </ThemeProvider>
+    </ProvideTheme>
   );
 };
 
