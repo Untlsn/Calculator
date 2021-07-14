@@ -1,8 +1,8 @@
-const aliases = require('../.storybook/aliases')
+const aliases = require('./aliases')
 
 module.exports = {
-  webpackFinal: async(config) => {
-    config.resolve.alias = aliases
+  async viteFinal(config) {
+    config.resolve.alias = aliases;
     return config;
   },
   stories: [
@@ -11,6 +11,9 @@ module.exports = {
   ],
   addons: [
     '@storybook/addon-links',
-    '@storybook/addon-essentials',
+    '@storybook/addon-essentials'
   ],
+  core: {
+    builder: 'storybook-builder-vite'
+  }
 }

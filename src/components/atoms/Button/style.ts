@@ -13,6 +13,7 @@ export const Wrapper = styled.div<WrapperProps>`
       case 'red': return theme.colors.buttonRed;
     }
   }};
+  &:hover { cursor: pointer }
   display: flex;
   align-items: center;
   justify-content: center;
@@ -25,7 +26,7 @@ export const Wrapper = styled.div<WrapperProps>`
     ? theme.fontSize.l
     : theme.fontSize.m
   };
-  
+  user-select: none;
   &:after {
     content: '';
     display: block;

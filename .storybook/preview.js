@@ -12,9 +12,9 @@ export const parameters = {
 };
 
 export const decorators = [
-  (Story) => (
-      <StyleProvider>
-        <Story />
-      </StyleProvider>
+  (Story) => React.createElement(
+      StyleProvider,
+      null,
+      React.createElement(Story)
   ),
 ];
