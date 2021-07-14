@@ -1,15 +1,7 @@
 import React from 'react';
 import * as S from './style';
-import { WrapperProps } from '@atoms/Button/types';
+import { WrapperProps } from './types.d';
 import { OnlyChildren } from '@type';
 
-const Button = ({ children, ...props }: WrapperProps & OnlyChildren) => {
-  return (
-    <S.Wrapper {...props}>
-      {children}
-    </S.Wrapper>
-  );
-};
-
-export default Button;
-export type ButtonProps = WrapperProps & OnlyChildren
+export default S.Wrapper;
+export type ButtonProps = WrapperProps & OnlyChildren;
